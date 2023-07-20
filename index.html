@@ -14,7 +14,6 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -24,118 +23,138 @@
     </header>
 
     <section id="about">
+	<h2>About</h2>
         <div class="about-container">
             <div class="about-image">
                 <img src="PersonalPicture.jpeg" alt="Personal Picture">
             </div>
             <div class="about-text">
-                <h2>About</h2>
                 <p>
                     <!-- Add a brief introduction about yourself here -->
-                    An enthusiastic computer graphics technology student with a passion for creating interactive and photorealistic visualizations. I enjoy exploring new technologies and their applications in various domains.
+                    I'm a highly motivated computer engineering student with a passion for pushing the boundaries of computer graphics programming. With a solid academic foundation and hands-on experience, I have delved into rendering photorealistic visuals, developed tools for medical image processing, and created immersive game experiences. With an insatiable thirst for knowledge and a love for innovative solutions, I strive to leave a lasting impact in the captivating world of computer graphics programming..
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div>
-            <h3>PURDUE UNIVERSITY West Lafayette, IN</h3>
-            <p>
-                Master of Science in Computer Graphics Technology
-                <br>
-                2023-Present
-            </p>
-        </div>
-        <div>
-            <h3>NETAJI SUBHAS UNIVERSITY OF TECHNOLOGY New Delhi, India</h3>
-            <p>
-                Bachelor of Technology, Major in Computer Engineering
-                <br>
-                2019-2023
-            </p>
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="project-grid">
+            <div class="project-box">
+                <h3>LETS UNBOUND</h3>
+                <center>
+                    <h4>Coding Mentor & Curriculum Designer</h4>
+                    Jan 2021 – Sept 2021
+                <p>
+                    I was invited back to Lets Unbound guide the revamp of the Python curriculum and expand it into areas like App Development, Game Development, and Data Science. I actively engaged with students, delivering the curricula through 1-on-1 tutoring and conducting live evaluations. Additionally, I organized workshops and QnA sessions for fellow mentors to familiarize them with the revised curricula. Furthermore, I conducted a comprehensive audit of rival companies' curricula and emerging technological trends, identifying areas for improvement and potential avenues for expansion.
+                </p>
+                </center>
+            </div>
+            <div class="project-box">
+                <h3>GRAPHICS RESEARCH GROUP</h3>
+                <center>
+                    <h4>IIIT New Delhi, India</h4>
+                    <h4>Research Intern</h4>
+                    Feb 2022 – Jun 2023
+                    <p>
+                        As a Research Intern at IIIT New Delhi, I created a CUDA-based rendering pipeline for photorealistic medical volume visualization. I also developed user-friendly 3D color image rendering with real-time transparency. Additionally, I designed a tool for generating surface meshes of Organ Structures from 3D Segmentation volumes. Leveraging VTK and ITK, I contributed to a novel dataset of Photorealistic images for medical imaging research.
+                    </p>
+                </center>
+            </div>
+            <div class="project-box">
+                <h3>LETS UNBOUND</h3>
+                <center>
+                    <h4>Coding Mentor & Curriculum Designer</h4>
+                    Aug 2020 – Dec 2020
+                <p>
+                    As part of Lets Unbound, I took on the responsibility of designing course curricula for Game Development and App Development using Python. These courses became some of the key offerings at Lets Unbound, developed in close collaboration with the Founders. Additionally, I served as a Mentor, directly engaging with students through a 1-on-1 tutoring system. I conducted multiple trial sessions and had the privilege of mentoring two long-term students throughout their learning journey.
+                </p>
+                </center>
+            </div>
         </div>
     </section>
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div>
-            <h3>GRAPHICS RESEARCH GROUP, IIIT New Delhi, India</h3>
-            <p>
-                Research Intern
-                <br>
-                Feb 2022 – Jun 2023
-            </p>
-            <ul>
-                <li>Worked on creating a rendering pipeline for photorealistic medical volume visualization using a CUDA based Monte Carlo ray-tracer</li>
-                <li>Developed a user-friendly functionality for rendering photorealistic 3D color images of the human body with real-time interactive transparency</li>
-                <li>Created a tool to generate surface meshes of Organ Structure from a 3D Segmentation volume</li>
-                <li>Utilizing industry-leading frameworks such as VTK and ITK, created a novel dataset of Photorealistic images for use in further research goals</li>
-            </ul>
-        </div>
-        <div>
-            <h3>LETS UNBOUND Mumbai, India</h3>
-            <p>
-                Coding Mentor & Curriculum Designer
-                <br>
-                Aug 2020 – Sept 2021
-            </p>
-            <ul>
-                <li>Designed the course curricula for Game development and App Development using Python from scratch, which served as one of the primary offerings of Lets Unbound, working in direct collaboration with the Founders</li>
-                <li>Guided and oversaw the revamp of the Python curriculum and oversee the expansion of the advanced python curriculum into diverse streams such as App Development, Game Development, and Data Science</li>
-                <li>Conducted workshops and QnA sessions with the other mentors to introduce the curricula to a 20+ team of mentors</li>
-                <li>Conducted a comparative audit of curricula offered by rival companies and emerging technological trends to identify points of improvement and new avenues of expansion</li>
-            </ul>
-        </div>
-    </section>
 
     <section id="projects">
         <h2>Research, Projects, and Publications</h2>
-        <div class="project-box">
-            <h3>Research on Medical Imaging and Photorealistic Visualization of 3D Volumes</h3>
-            <p>02/2022-Present</p>
-            <p>Details about the research project.</p>
+        <div class="project-grid">
+            <div class="project-item">
+                <div class="project-box">
+                    <h3>Research on Medical Imaging and Photorealistic Visualization of 3D Volumes</h3>
+                    <img src="project1-image.jpg" alt="Project 1 Image">
+                    <p>Research project with the Graphics Research Group at IIIT Delhi, in the field of 3D medical volume visualization</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-box">
+                    <h3>Monte Carlo Ray Tracing Using CUDA</h3>
+                    <img src="project2-image.png" alt="Project 2 Image">
+                    <p>A CUDA-based GPU implementation of a naïve Monte Carlo Raytracer. (<a href="https://github.com/Anav-117/MonteCarloRayTracer">GitHub</a>)</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-box">
+                    <h3>OpenGL PBR Pipeline</h3>
+                    <img src="project3-image.jpg" alt="Project 3 Image">
+                    <p>Implementation of the Physically Based Render (PBR) Pipeline with Image Based Lighting (IBL) in OpenGL (<a href="https://github.com/Anav-117/OpenGL-PBR">GitHub</a>)</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-box">
+                    <h3>Thesis on Differentiating between Natural and AI-Generated Images using Neural Networks</h3>
+                    <img src="project4-image.jpg" alt="Project 4 Image">
+                    <p>Thesis on augmenting images created by AI based Diffusion Models to allow current image classification models to achieve higher levels of accuracy</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-box">
+                    <h3>Sponza Model Render</h3>
+                    <img src="project5-image.jpg" alt="Project 5 Image">
+                    <p>Real-Time render of Crytek's Sponza Model using OpenGL (<a href="https://github.com/Anav-117/OpenGL-Lighting-Test">GitHub</a>)</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-box">
+                    <h3>De-Fence: LoRa based Hop-to-Hop Communication</h3>
+                    <img src="project6-image.jpg" alt="Project 6 Image">
+                    <p>Anav Chaudhary, Maanas Talwar, Avil Goel, Gaurav Singal, and Riti Kushwaha</p>
+                    <p>2022. In 2022 Fourteenth International Conference on Contemporary Computing (IC3) (IC3- 2022), <a href="https://doi.org/10.1145/3549206.3549312">doi.org/10.1145/3549206.3549312</a></p>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-box">
+                    <h3>Boids Simulation </h3>
+                    <img src="project7-image.gif" alt="Project 7 Image">
+                    <p>A 2D simulation of the swarming and flocking behavior exhibited by various animals (most notably birds and fish)  (<a href="https://github.com/Anav-117/BoidSimulation">GitHub</a>)</p>
+                </div>
+            </div>
         </div>
-        <div class="project-box">
-            <h3>Thesis on Differentiating between Natural and AI-Generated Images using Neural Networks</h3>
-            <p>2023</p>
-            <p>Details about the thesis project.</p>
-        </div>
-        <div class="project-box">
-            <h3>Monte Carlo Ray Tracing Using CUDA</h3>
-            <p>05/2023-06/2023</p>
-            <p>A CUDA-based GPU implementation of a naïve Monte Carlo Raytracer. (<a href="https://github.com/Anav-117/MonteCarloRayTracer">GitHub</a>)</p>
-        </div>
-        <div class="project-box">
-            <h3>OpenGL PBR Pipeline</h3>
-            <p>06/2021 - 07/2021</p>
-            <p>Implementation of the Physically Based Render (PBR) Pipeline with Image Based Lighting (IBL) in OpenGL (<a href="https://github.com/Anav-117/OpenGL-PBR">GitHub</a>)</p>
-        </div>
-        <div class="project-box">
-            <h3>De-Fence: LoRa based Hop-to-Hop Communication</h3>
-            <p>Anav Chaudhary, Maanas Talwar, Avil Goel, Gaurav Singal, and Riti Kushwaha</p>
-            <p>2022. In 2022 Fourteenth International Conference on Contemporary Computing (IC3) (IC3- 2022), <a href="https://doi.org/10.1145/3549206.3549312">doi.org/10.1145/3549206.3549312</a></p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills and Abilities</h2>
-        <ul>
-            <li>Programming Languages, Frameworks, and APIs - C, C++, C#, Python, OpenGL, CUDA, GLSL, Qt5, Javascript, Lua, MYSQL, Flutter, Arduino</li>
-            <li>Engines and Software - Unity, Unreal Engine 5, Blender, Adobe Photoshop, Android Studio</li>
-            <li>Soft Skills – Public Speaking and Communication, Multitasking, Ability to work independently, Flexibility</li>
-        </ul>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <div class="contact-icons">
-            <a href="mailto:anav262001@gmail.com"><img src="email.svg" alt="Email"></a>
-            <a href="https://www.linkedin.com/in/anavchaudhary"><img src="linkedin.svg" alt="LinkedIn"></a>
-            <a href="https://github.com/Anav-117"><img src="github.svg" alt="GitHub"></a>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="contact-icons">
+                    <a href="mailto:anav262001@gmail.com"><img src="email.svg" alt="Email"></a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/anavchaudhary"><img src="linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icons">
+                    <a href="https://github.com/Anav-117"><img src="github.svg" alt="GitHub"></a>
+                </div>
+            </div>
         </div>
     </section>
+
+    <div class="return-to-top" onclick="scrollToTop()">
+        <span>&#9709;</span>
+    </div>
 
     <script src="scripts.js"></script>
 </body>
