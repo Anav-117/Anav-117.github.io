@@ -1,4 +1,3 @@
-/* Add your CSS styles here to customize the appearance of the portfolio website */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -39,6 +38,71 @@ nav a:hover {
 
 section {
     padding: 2rem;
+    text-align: center;
 }
 
-/* Add more custom styles for different sections as needed */
+/* Add alternating background colors */
+section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+section:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+/* Center all headings */
+h2, h3 {
+    text-align: center;
+}
+
+/* Style buttons with hover and click effects */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #00397a;
+}
+
+/* Center all content */
+section, div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Logo-based hyperlinks for contact section */
+.contact-icons a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.contact-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Boxes for each project */
+.project-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 400px;
+    transition: transform 0.3s;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+}
