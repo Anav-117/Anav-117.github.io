@@ -166,10 +166,8 @@ section, div {
 
 /* About section */
 .about-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    gap: 30px;
 }
 
 .about-image img {
@@ -184,6 +182,7 @@ section, div {
     border-radius: 5px;
     padding: 10px;
     flex: 0.8;
+    text-align: center;
 }
 
 .return-to-top {
