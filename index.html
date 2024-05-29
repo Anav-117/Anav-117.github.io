@@ -1,213 +1,519 @@
 <!DOCTYPE html>
+
+<!--
+   Template:   Waldo - Responsive HTML5 Portfolio Website Template
+   Author:     Themetorium
+   URL:        http://themetorium.net
+   Notes:		You are free to use prepared helper classes to customize your website. Look into "helper.css" file for more info.  
+-->
+
 <html lang="en">
+	<head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anav Chaudhary - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+		<!-- Title -->
+		<title>Anav</title>
 
-<body>
-    <header>
-        <h1>Anav Chaudhary</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="./AnavChaudhary_Resume.pdf" target="_blank">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Responsive One Page HTML5 Website Template">
+		<meta name="keywords" content="HTML5, CSS3, Bootsrtrap, Responsive, Template, Theme, Website" />
+		<meta name="author" content="themetorium.net">
 
-    <section id="about">
-	<h2>About</h2>
-        <div class="about-container">
-            <div class="about-image">
-                <img src="images/PersonalPicture.jpeg" alt="Personal Picture">
-            </div>
-            <div class="about-text">
-                <p>
-                    <!-- Add a brief introduction about yourself here -->
-                    I'm a highly motivated person with a passion for pushing the boundaries of computer graphics programming. With a solid academic foundation and hands-on experience, I have delved into rendering photorealistic visuals, developed tools for medical image processing, and created immersive game experiences. With an insatiable thirst for knowledge and a love for innovative solutions, I strive to leave a lasting impact on the captivating world of computer graphics programming.
-                </p>
-            </div>
-        </div>
-    </section>
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <section id="projects">
-        <h2>Research, Projects, and Publications</h2>
-        <div class="project-grid">
-            <div class="project-item">
-                <div class="project-box">
-                    <h3>Research on Medical Imaging and Photorealistic Visualization of 3D Volumes</h3>
-                    <img src="images/project1-image.jpg" alt="Project 1 Image">
-                    <p>Research project with the Graphics Research Group at IIITD, in the field of 3D medical volume visualization</p>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-box" onclick="location.href='https://github.com/Anav-117/MonteCarloRayTracer';" style="cursor:pointer;">
-                    <h3>Monte Carlo Ray Tracing Using CUDA</h3>
-                    <img src="images/project2-image.png" alt="Project 2 Image">
-                    <p>A CUDA-based GPU implementation of a naïve Monte Carlo Raytracer.</p>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-box" onclick="location.href='https://github.com/Anav-117/VulkanRenderer';" style="cursor:pointer;">
-                    <h3>Vulkan Renderer</h3>
-                    <img src="images/ProjectVulkan.png" alt="Project 3 Image">
-                    <p>A versatile renderer written in Vulkan to display meshes in multiple distinct styles.</p>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-box" onclick="location.href='https://github.com/Anav-117/OpenGL-PBR';" style="cursor:pointer;">
-                    <h3>OpenGL PBR Pipeline</h3>
-                    <img src="images/project3-image.jpg" alt="Project 3 Image">
-                    <p>Implementation of the Physically Based Render (PBR) Pipeline with Image Based Lighting (IBL) in OpenGL.</p>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-box" onclick="location.href='https://doi.org/10.48550/arXiv.2309.14508';" style="cursor:pointer;">
-                    <h3>HEROES</h3>
-                    <img src="images/research1-image.png" alt="Research 1 Image">
-                    <p>An Unreal Engine-based Human and Emergency Robot Operation Education System.</p>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-box" onclick="location.href='https://github.com/Anav-117/Fluid-Erosion';" style="cursor:pointer;">
-                    <h3>Fluid Erosion Simulation</h3>
-                    <img src="images/ProjectFluidErosion.png" alt="Research 1 Image">
-                    <p>A Smooth Particle Hydrodynamics (SPH) based fluid erosion simulation.</p>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-box">
-                    <h3>Thesis on Differentiating between Natural and AI-Generated Images using Neural Networks</h3>
-                    <img src="images/project4-image.jpg" alt="Project 4 Image">
-                    <p>Thesis on augmenting images created by AI based Diffusion Models to allow current image classification models to achieve higher levels of accuracy</p>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-box" onclick="location.href='https://github.com/Anav-117/UXForVR';" style="cursor:pointer;">
-                    <h3>Measuring Cognitive Load in VR</h3>
-                    <img src="images/ProjectVR.png" alt="Project 5 Image">
-                    <p>A virtual reality experiment to measure and quantify cognitive load in VR applications. Built using Unity.</p>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-box" onclick="location.href='https://github.com/Anav-117/OpenGL-Lighting-Test';" style="cursor:pointer;">
-                    <h3>Sponza Model Render</h3>
-                    <img src="images/project5-image.jpg" alt="Project 5 Image">
-                    <p>Real-Time render of Crytek's Sponza Model using OpenGL.</p>
-                </div>
-            </div>
-            <div class="project-item" onclick="location.href='https://doi.org/10.1145/3549206.3549312';" style="cursor:pointer;">
-                <div class="project-box">
-                    <h3>De-Fence: LoRa based Hop-to-Hop Communication</h3>
-                    <img src="images/research2-image.jpg" alt="Research 2 Image">
-                    <p>Anav Chaudhary, Maanas Talwar, Avil Goel, Gaurav Singal, and Riti Kushwaha</p>
-                    <p>2022. In 2022 Fourteenth International Conference on Contemporary Computing (IC3) (IC3- 2022).</a></p>
-                </div>
-            </div>
-            <div class="project-item" onclick="location.href='https://github.com/Anav-117/BoidSimulation';" style="cursor:pointer;">
-                <div class="project-box">
-                    <h3>Boids Simulation </h3>
-                    <img src="images/project6-image.gif" alt="Project 6 Image">
-                    <p>A 2D simulation of the swarming and flocking behavior exhibited by various animals (most notably birds and fish).</p>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- Favicon (http://www.favicon-generator.org/) -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="project-grid">
-            <div class="project-box">
-                <h3>PURDUE UNIVERSITY</h3>
-                <center>
-                    <h4>Graduate Teaching Assistant</h4>
-                    Jan 2024 – May 2024
-                    <p>
-                        <ul>
-                            <li>Led weekly lab sessions for 120+ students, resulting in a marked improvement in student performance.</li>
-                            <li>Assisted in improving student performance by implementing interactive learning activities, resulting in a 20% increase in average quiz scores compared to the previous semester.</li>
-                        </ul> 
-                        <br>
-                        <br>
-                    </p>
-                </center>
-            </div>
-	        <div class="project-box">
-                <h3>GRAPHICS RESEARCH GROUP</h3>
-                <center>
-                    <h4>IIITD</h4>
-                    <h4>Research Assistant</h4>
-                    Feb 2022 – Jun 2023
-                    <p>
-                        <ul>
-                            <li>Orchestrated a 25% acceleration in rendering times in a CUDA-based Monte Carlo ray-tracer for photorealistic medical volume visualization to create a novel dataset of 100,000+ photorealistic images. </li>
-                            <li>Developed an innovative tool using VTK, reducing processing time by 40% for generating surface meshes of Organ Structures from 3D Segmentation volume. </li>
-                        </ul> 
-                    </p>
-                </center>
-            </div>
-            <div class="project-box">
-                <h3>LETS UNBOUND</h3>
-                <center>
-                    <h4>Coding Mentor & Curriculum Designer</h4>
-                    Aug 2020 – Sept 2021
-                <p>
-                    <ul>
-                        <li>Pioneered the creation of comprehensive Game Development and App Development curricula in Python, integral to Lets Unbound's offerings, driving a 20% increase in student enrollment.</li>
-                        <li>Spearheaded the redesign of the Python curriculum, expanding it into App Development, Game Development, and Data Science streams, resulting in a 15% surge in program diversity and student engagement.</li>
-                    </ul>
-                </p>
-                </center>
-            </div>
-            <div class="project-box">
-                <h3>CITIZEN OF ROME – DYNASTY ASCENDANT</h3>
-                <center>
-                    <h4>Programmer & Quest Designer</h4>
-                    Mar 2020 – May 2020
-                <p>
-                    <ul>
-                        <li>Contributed as a developer to 'Citizen of Rome – Dynasty Ascendant,' a top-rated family/Dynasty life simulation game available on PC and Mobile, driving a 25% increase in the number of players</li>
-                        <li>Originated and implemented the highly anticipated 'Warfare' questlines, enhancing the military narrative of the Roman Republic within the game, resulting in a 30% surge in user satisfaction and prolonged gameplay.</li>
-                    </ul>
-                </p>
-                </center>
-            </div>
-        </div>
-    </section>
-	
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-grid">
-            <div class="contact-item">
-                <div class="contact-icons">
-                    <a href="mailto:anav262001@gmail.com"><img src="images/email.svg" alt="Email"></a>
-                </div>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icons">
-                    <a href="https://www.linkedin.com/in/anavchaudhary"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-                </div>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icons">
-                    <a href="https://github.com/Anav-117"><img src="images/github.svg" alt="GitHub"></a>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- Google font (https://www.google.com/fonts) -->
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic' rel='stylesheet' type='text/css'> <!-- Body font (Ubuntu Mono) -->
 
-    <div class="return-to-top" onclick="scrollToTop()">
-        <span>&#9709;</span>
-    </div>
+		<!-- Bootstrap CSS (http://getbootstrap.com) -->
+		<link rel="stylesheet" type='text/css' href="assets/vendor/bootstrap/css/bootstrap.min.css"> <!-- bootstrap CSS (http://getbootstrap.com) -->
 
-    <script src="scripts.js"></script>
-</body>
+		<!-- Libs and Plugins CSS -->
+		<link rel="stylesheet" href="assets/vendor/jquery/css/jquery-ui.min.css"> <!-- jquery UI CSS (https://jquery.com) -->
+		<link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome-all.min.css"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
+		<link rel="stylesheet" href="assets/vendor/owl-carousel/css/owl.carousel.min.css"> <!-- Owl Carousel CSS (https://owlcarousel2.github.io/OwlCarousel2/) -->
+		<link rel="stylesheet" href="assets/vendor/owl-carousel/css/owl.theme.default.min.css"> <!-- Owl Carousel default theme CSS (https://owlcarousel2.github.io/OwlCarousel2/) -->
+		<link rel="stylesheet" href="assets/vendor/magnific-popup/css/magnific-popup.css"> <!-- Magnific Popup CSS (http://dimsemenov.com/plugins/magnific-popup/) -->
+		<link rel="stylesheet" href="assets/vendor/ytplayer/css/jquery.mb.YTPlayer.min.css"> <!-- YTPlayer CSS (more info: https://github.com/pupunzi/jquery.mb.YTPlayer) -->
+
+		<!-- Theme master CSS -->
+		<link rel="stylesheet" type='text/css' href="assets/css/helper.css">
+		<link rel="stylesheet" type='text/css' href="assets/css/theme.css">
+
+
+	</head>
+
+	<body>
+
+		<div id="header">
+
+			<!-- Begin logo
+			================ -->
+			<div id="logo">
+				<a href="index.html"><img src="assets/img/images/Logo.png" style="width: 25%; height: 25%; padding-left: 5%;" title="Home" alt="logo"></a>
+			</div>
+			<!-- End logo -->
+		
+		</div>
+
+		<!-- *************************************
+		*********** Begin body content *********** 
+		************************************** -->
+		<div id="body-content">
+
+			<!-- Begin content container -->
+			<div id="content-container">
+
+				<!-- ==============================
+				///// Begin intro (slideshow) /////
+				=============================== -->
+				<section id="intro" class="slideshow bg-dark">
+
+					<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+					====================================================================
+					* Use class "nav-outside" for outside nav.
+					* Use class "nav-outside-top" for outside top nav.
+					* Use class "nav-bottom-right" for bottom right nav.
+					* Use class "nav-rounded" for rounded nav.
+					* Use class "dots-outside" for outside dots.
+					* Use class "dots-left" or "dots-right" to align dots.
+					* Use class "dots-rounded" for rounded dots.
+					* Use class "owl-mousewheel" to enable mousewheel support.
+					* Available carousel data attributes:
+							data-items="5".......................(items visible on desktop)
+							data-tablet-landscape="4"............(items visible on mobiles)
+							data-tablet-portrait="3".............(items visible on mobiles)
+							data-mobile-landscape="2"............(items visible on tablets)
+							data-mobile-portrait="1".............(items visible on tablets)
+							data-loop="true".....................(true/false)
+							data-margin="10".....................(space between items)
+							data-center="true"...................(true/false)
+							data-start-position="0"..............(item start position)
+							data-animate-in="fadeIn".............(fade-in animation)
+							data-animate-out="fadeOut"...........(fade-out animation)
+							data-mouse-drag="false"..............(true/false)
+							data-touch-drag="false"..............(true/false)
+							data-autoheight="true"...............(true/false)
+							data-autoplay="true".................(true/false)
+							data-autoplay-timeout="5000".........(milliseconds)
+							data-autoplay-hover-pause="true".....(true/false)
+							data-autoplay-speed="800"............(milliseconds)
+							data-drag-end-speed="800"............(milliseconds)
+							data-nav="true"......................(true/false)
+							data-nav-speed="800".................(milliseconds)
+							data-dots="false"....................(true/false)
+							data-dots-speed="800"................(milliseconds)
+					-->
+					<div class="owl-carousel cursor-grab fade-out-scroll-5 nav-bottom-right" data-items="1" data-dots="false" data-nav="true">
+
+						<!-- Begin carousel item 
+						========================= -->
+						<div class="cc-item parallax bg-image" style="background-image: url(assets/img/images/Portfolio.png); background-position: 100% 50%; direction: ltr;" data-percent-height="0.6">
+
+							<!-- Begin caption -->
+							<div class="cc-caption intro-caption bottom-left caption-animate">
+								<h1 class="intro-title">Hey I'm Anav</h1>
+								<div class="intro-sub-title-wrap max-width-400"> <!-- max width class is optional -->
+									<h2 class="intro-sub-title">
+										Graphics Programmer
+									</h2>
+								</div>
+							</div>
+							<!-- End caption -->
+
+						</div>
+						<!-- End carousel item -->
+
+					</div>
+					<!-- End content carousel -->
+
+				</section>
+				<!-- End intro -->
+
+
+				<!-- ===================================
+				///// Begin portfolio list section /////
+				==================================== -->
+				<section id="portfolio-list-section">
+					<div class="isotope-wrap">
+						
+						<!-- Begin isotope
+						===================
+						* Use class "gutter-1", "gutter-2" or "gutter-3" to add more space between items.
+						* Use class "col-1", "col-2", "col-3", "col-4", "col-5" or "col-6" for columns.
+						-->
+						<div class="isotope col-4">
+
+							<!-- Begin isotope items wrap 
+							==============================
+							* Use class "iso-boxed" to enable boxed layout.
+							* Use class "pli-caption-center" to enable caption center position.
+							* Use class "pli-caption-alter" to enable caption alternative style.
+							-->
+							<div class="isotope-items-wrap pli-caption-alter">
+
+								<!-- Grid sizer (do not remove!!!) -->
+								<div class="grid-sizer"></div>
+
+
+								<!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+								<div class="isotope-item iso-height-2">
+
+									<!-- Begin portfolio list item -->
+									<a href="MedicalImaging.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/images/project1-image.jpg); background-position: 50% 50%">
+										<div class="pli-hover">
+											<div class="pli-caption">
+												<div><h2 class="pli-title">Medical Imaging</h2></div>
+											</div>
+											<div class="pli-arrow"></div>
+										</div>
+									</a>
+									<!-- End portfolio list item -->
+
+								</div>
+								<!-- End isotope item -->
+
+								<!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+								<div class="isotope-item iso-height-1">
+
+									<!-- Begin portfolio list item -->
+									<a href="PBR.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/images/PBRDP.gif); background-position: 50% 50%">
+										<div class="pli-hover">
+											<div class="pli-caption">
+												<div><h2 class="pli-title">Physically Based Rendering</h2></div>
+											</div>
+											<div class="pli-arrow"></div>
+										</div>
+									</a>
+									<!-- End portfolio list item -->
+
+								</div>
+								<!-- End isotope item -->
+
+								<!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+								<div class="isotope-item iso-height-1">
+
+									<!-- Begin portfolio list item -->
+									<a href="Vulkan.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/images/ProjectVulkan.png); background-position: 50% 50%">
+										<div class="pli-hover">
+											<div class="pli-caption">
+												<div><h2 class="pli-title">Vulkan Renderer</h2></div>
+											</div>
+											<div class="pli-arrow"></div>
+										</div>
+									</a>
+									<!-- End portfolio list item -->
+
+								</div>
+								<!-- End isotope item -->
+
+								<!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+								<div class="isotope-item iso-height-1">
+
+									<!-- Begin portfolio list item -->
+									<a href="RayTracing.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/images/project2-image.png); background-position: 50% 50%">
+										<div class="pli-hover">
+											<div class="pli-caption">
+												<div><h2 class="pli-title">Ray Tracing</h2></div>
+											</div>
+											<div class="pli-arrow"></div>
+										</div>
+									</a>
+									<!-- End portfolio list item -->
+
+								</div>
+								<!-- End isotope item -->
+
+								<!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+								<div class="isotope-item iso-height-2">
+
+									<!-- Begin portfolio list item -->
+									<a href="Heroes.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/images/research1-image.png); background-position: 50% 50%">
+										<div class="pli-hover">
+											<div class="pli-caption">
+												<div><h2 class="pli-title">HEROES</h2></div>
+											</div>
+											<div class="pli-arrow"></div>
+										</div>
+									</a>
+									<!-- End portfolio list item -->
+
+								</div>
+								<!-- End isotope item -->
+
+								<div class="isotope-item iso-height-2">
+
+									<!-- Begin portfolio list item -->
+									<a href="LOD.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/images/ProjectLOD.png); background-position: 50% 50%">
+										<div class="pli-hover">
+											<div class="pli-caption">
+												<div><h2 class="pli-title">Dynamic LOD</h2></div>
+											</div>
+											<div class="pli-arrow"></div>
+										</div>
+									</a>
+									<!-- End portfolio list item -->
+
+								</div>
+
+								<div class="isotope-item iso-height-1">
+
+									<!-- Begin portfolio list item -->
+									<a href="Compute.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/images/ProjectCompute.gif); background-position: 50% 50%">
+										<div class="pli-hover">
+											<div class="pli-caption">
+												<div><h2 class="pli-title">Compute Shaders</h2></div>
+											</div>
+											<div class="pli-arrow"></div>
+										</div>
+									</a>
+									<!-- End portfolio list item -->
+
+								</div>
+
+								<!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+								<div class="isotope-item iso-height-1">
+
+									<!-- Begin portfolio list item -->
+									<a href="Fluid.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/images/ProjectFluidErosion.png); background-position: 50% 50%">
+										<div class="pli-hover">
+											<div class="pli-caption">
+												<div><h2 class="pli-title">Fluid Erosion</h2></div>
+											</div>
+											<div class="pli-arrow"></div>
+										</div>
+									</a>
+									<!-- End portfolio list item -->
+
+								</div>
+								<!-- End isotope item -->
+
+								<!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+								<div class="isotope-item iso-height-1">
+
+									<!-- Begin portfolio list item -->
+									<a href="GenAI.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/images/project4-image.jpg); background-position: 50% 50%">
+										<div class="pli-hover">
+											<div class="pli-caption">
+												<div><h2 class="pli-title">Generative AI</h2></div>
+											</div>
+											<div class="pli-arrow"></div>
+										</div>
+									</a>
+									<!-- End portfolio list item -->
+
+								</div>
+								<!-- End isotope item -->
+
+								<!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+								<div class="isotope-item iso-height-1">
+
+									<!-- Begin portfolio list item -->
+									<a href="VR.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/images/ProjectVR.png); background-position: 50% 50%">
+										<div class="pli-hover">
+											<div class="pli-caption">
+												<div><h2 class="pli-title">Cognitive Load in Virtual Reality</h2></div>
+											</div>
+											<div class="pli-arrow"></div>
+										</div>
+									</a>
+									<!-- End portfolio list item -->
+
+								</div>
+								<!-- End isotope item -->
+
+								<!-- ===================== 
+								/// Begin isotope item ///
+								========================== 
+								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+								-->
+								<div class="isotope-item iso-height-1">
+
+									<!-- Begin portfolio list item -->
+									<a href="Sponza.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/images/project5-image.jpg); background-position: 50% 50%">
+										<div class="pli-hover">
+											<div class="pli-caption">
+												<div><h2 class="pli-title">Sponza</h2></div>
+											</div>
+											<div class="pli-arrow"></div>
+										</div>
+									</a>
+									<!-- End portfolio list item -->
+
+								</div>
+								<!-- End isotope item -->
+
+								<div class="isotope-item iso-height-1">
+
+									<!-- Begin portfolio list item -->
+									<a href="Defence.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/images/research2-image.jpg); background-position: 50% 50%">
+										<div class="pli-hover">
+											<div class="pli-caption">
+												<div><h2 class="pli-title">De-Fence</h2></div>
+											</div>
+											<div class="pli-arrow"></div>
+										</div>
+									</a>
+									<!-- End portfolio list item -->
+
+								</div>
+
+								<div class="isotope-item iso-height-1">
+
+									<!-- Begin portfolio list item -->
+									<a href="Boids.html" class="portfolio-list-item bg-image" style="background-image: url(assets/img/images/project6-image.gif); background-position: 50% 50%">
+										<div class="pli-hover">
+											<div class="pli-caption">
+												<div><h2 class="pli-title">Boids</h2></div>
+											</div>
+											<div class="pli-arrow"></div>
+										</div>
+									</a>
+									<!-- End portfolio list item -->
+
+								</div>
+
+							</div>
+							<!-- End isotope items wrap -->
+
+						</div>
+						<!-- End isotope -->
+
+					</div> <!-- /.isotope-wrap -->
+				</section>
+				<!-- End section -->
+
+			</div>
+			<!-- End content container -->
+
+
+			<!-- ===================
+			///// Begin footer /////
+			========================
+			* Use class "fixed-footer" to enable fixed footer (no effect on small devices).
+			-->
+			<footer id="footer" class="fixed-footer bg-dark text-gray-2">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-4">
+
+							<!-- Begin footer text -->
+							<div class="footer-text">
+								<h4>- About</h4>
+								I'm a highly motivated person with a passion for pushing the boundaries of computer graphics programming. With a solid academic foundation and hands-on experience, I have delved into rendering photorealistic visuals, developed tools for medical image processing, and created immersive game experiences.
+							</div>
+							<!-- End footer text -->
+
+						</div> <!-- /.col -->
+
+						<div class="col-md-4 text-center">
+
+						</div> <!-- /.col -->
+
+						<div class="col-md-4">
+
+							<!-- Begin social buttons -->
+							<div class="social-buttons margin-bottom-15">
+								<ul>
+									<li><a href="https://www.linkedin.com/in/anavchaudhary/" class="btn btn-primary btn-link" target="_blank" title="Follow me on linkedin"><i class="fab fa-linkedin-in" style='font-size:36px'></i></a></li>
+									<li><a href="https://github.com/Anav-117" class="btn btn-primary btn-link" target="_blank" title="Check out my GitHub"><i class="fab fa-github" style='font-size:36px'></i></a></li>
+									<li><a href="mailto:anav262001@gmail.com" class="btn btn-primary btn-link" target="_blank" title="Mail me"><i class="fas fa-envelope" style='font-size:36px'></i></a></li>
+								</ul>
+							</div>
+							<!-- End social buttons -->
+
+						</div> <!-- /.col -->
+
+					</div> <!-- /.row -->
+				</div> <!-- /.container -->
+
+				<!-- Scroll to top button -->
+				<a href="#body-content" class="scrolltotop sm-scroll"></a>
+
+			</footer>
+			<!-- End footer -->
+
+
+		</div>
+		<!-- End body content -->
+
+
+
+        
+
+		<!-- ====================
+		///// Scripts below /////
+		===================== -->
+
+		<!-- Core JS -->
+		<script src="assets/vendor/jquery/js/jquery.min.js"></script> <!-- jquery JS (https://jquery.com) -->
+		<script src="assets/vendor/jquery/js/jquery-ui.min.js"></script> <!-- jquery UI JS (https://jquery.com) -->
+		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script> <!-- bootstrap JS (http://getbootstrap.com) -->
+
+		<!-- Libs and Plugins JS -->
+		<script src="assets/vendor/pace.min.js"></script> <!-- Pace (page loader) JS (http://github.hubspot.com/pace/docs/welcome/) -->
+		<script src="assets/vendor/jquery.easing.min.js"></script> <!-- Easing JS (http://gsgd.co.uk/sandbox/jquery/easing/) -->
+		<script src="assets/vendor/isotope.pkgd.min.js"></script> <!-- Isotope JS (http://isotope.metafizzy.co) -->
+		<script src="assets/vendor/imagesloaded.pkgd.min.js"></script> <!-- ImagesLoaded JS (https://github.com/desandro/imagesloaded) -->
+		<script src="assets/vendor/jquery.mousewheel.min.js"></script> <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
+		<script src="assets/vendor/owl-carousel/js/owl.carousel.min.js"></script> <!-- Owl Carousel JS (https://owlcarousel2.github.io/OwlCarousel2/) -->
+		<script src="assets/vendor/magnific-popup/js/jquery.magnific-popup.min.js"></script> <!-- Magnific Popup JS (http://dimsemenov.com/plugins/magnific-popup/) -->
+		<script src="assets/vendor/ytplayer/js/jquery.mb.YTPlayer.min.js"></script> <!-- YTPlayer JS (more info: https://github.com/pupunzi/jquery.mb.YTPlayer) -->
+
+		<!-- Theme master JS -->
+		<script src="assets/js/theme.js"></script>
+
+
+
+		<!--==============================
+		///// Begin Google Analytics /////
+		============================== -->
+
+		<!-- Paste your Google Analytics code here. 
+		Go to http://www.google.com/analytics/ for more information. -->
+
+		<!-- End Google Analytics -->
+
+
+
+	</body>
 
 </html>
